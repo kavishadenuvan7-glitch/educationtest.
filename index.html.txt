@@ -1,0 +1,1703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDUCATION - Sri Lanka's Premier Free Learning Platform | Grade 1-13, O/L & A/L</title>
+    <!-- Google Fonts: Inter & Sinhala Noto Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+Sinhala:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* CSS RESET & VARIABLES */
+        :root {
+            --bg-dark-blue: #0A192F;
+            --bg-nav-blue: #0F2342;
+            --primary-blue: #1E3A8A;
+            --accent-gold: #F59E0B;
+            --accent-gold-hover: #D97706;
+            --accent-blue: #3B82F6;
+            --text-dark: #0F172A;
+            --text-muted: #475569;
+            --text-light: #F8FAFC;
+            --bg-light: #F8FAFC;
+            --bg-card: #FFFFFF;
+            --border-color: #E2E8F0;
+            --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
+            --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+            --shadow-lg: 0 10px 25px rgba(0,0,0,0.12);
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 20px;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', 'Noto Sans Sinhala', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* CONTAINER */
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* HEADER & NAVIGATION */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(10, 25, 47, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 75px;
+        }
+
+        .brand-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: #FFFFFF;
+            font-weight: 800;
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+        }
+
+        .logo-icon {
+            background: linear-gradient(135deg, var(--accent-gold), #FBBF24);
+            color: var(--bg-dark-blue);
+            width: 42px;
+            height: 42px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            box-shadow: 0 0 15px rgba(245, 158, 11, 0.4);
+        }
+
+        .logo-text span {
+            color: var(--accent-gold);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: #E2E8F0;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--accent-gold);
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 10px 22px;
+            border-radius: var(--radius-sm);
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+            text-decoration: none;
+        }
+
+        .btn-gold {
+            background-color: var(--accent-gold);
+            color: var(--bg-dark-blue);
+        }
+
+        .btn-gold:hover {
+            background-color: var(--accent-gold-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--accent-gold);
+            color: var(--accent-gold);
+        }
+
+        .btn-outline:hover {
+            background: var(--accent-gold);
+            color: var(--bg-dark-blue);
+        }
+
+        .btn-blue {
+            background-color: var(--primary-blue);
+            color: #FFFFFF;
+        }
+
+        .btn-blue:hover {
+            background-color: #1D4ED8;
+            transform: translateY(-2px);
+        }
+
+        .mobile-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            background: linear-gradient(135deg, var(--bg-dark-blue) 0%, #0F2342 60%, #1E3A8A 100%);
+            color: white;
+            padding: 80px 0 100px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -20%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(245,158,11,0.15) 0%, rgba(0,0,0,0) 70%);
+            border-radius: 50%;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .hero-content h1 {
+            font-size: 3.1rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 12px;
+        }
+
+        .hero-subtitle-sinhala {
+            font-family: 'Noto Sans Sinhala', sans-serif;
+            font-size: 1.3rem;
+            color: var(--accent-gold);
+            margin-bottom: 20px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .hero-desc {
+            font-size: 1.05rem;
+            color: #94A3B8;
+            margin-bottom: 30px;
+            max-width: 540px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        .stats-strip {
+            display: flex;
+            gap: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 25px;
+        }
+
+        .stat-item h3 {
+            font-size: 1.8rem;
+            color: var(--accent-gold);
+            font-weight: 700;
+        }
+
+        .stat-item p {
+            font-size: 0.85rem;
+            color: #94A3B8;
+        }
+
+        .hero-illustration {
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+
+        .illustration-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: var(--radius-lg);
+            padding: 30px;
+            backdrop-filter: blur(12px);
+            box-shadow: var(--shadow-lg);
+            width: 100%;
+            max-width: 480px;
+        }
+
+        .card-header-badge {
+            display: inline-block;
+            background: rgba(245, 158, 11, 0.2);
+            color: var(--accent-gold);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .hero-search-box {
+            background: #FFFFFF;
+            border-radius: var(--radius-md);
+            padding: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+        }
+
+        .hero-search-box input {
+            border: none;
+            outline: none;
+            padding: 10px 15px;
+            font-size: 0.95rem;
+            width: 100%;
+            color: var(--text-dark);
+        }
+
+        .quick-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background: rgba(255,255,255,0.1);
+            color: #E2E8F0;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .tag:hover {
+            background: var(--accent-gold);
+            color: var(--bg-dark-blue);
+        }
+
+        /* SECTION TITLES */
+        .section-header {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .section-subtitle {
+            color: var(--accent-gold-hover);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-size: 0.85rem;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .section-title {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--text-dark);
+            margin-bottom: 12px;
+        }
+
+        .section-title span {
+            color: var(--primary-blue);
+        }
+
+        .section-desc {
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 0.98rem;
+        }
+
+        /* MAIN SEARCH & FILTER SECTION */
+        .search-filter-section {
+            background: #FFFFFF;
+            margin-top: -40px;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-lg);
+            padding: 25px 30px;
+            position: relative;
+            z-index: 10;
+            border: 1px solid var(--border-color);
+        }
+
+        .filter-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr auto;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .filter-group label {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            text-transform: uppercase;
+        }
+
+        .filter-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-sm);
+            font-size: 0.95rem;
+            background-color: var(--bg-light);
+            outline: none;
+            transition: var(--transition);
+        }
+
+        .filter-control:focus {
+            border-color: var(--accent-blue);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+        }
+
+        /* GRADE-WISE EXPLORER */
+        .grade-section {
+            padding: 90px 0 60px;
+        }
+
+        .grade-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 35px;
+            flex-wrap: wrap;
+        }
+
+        .tab-btn {
+            padding: 12px 24px;
+            border-radius: 30px;
+            background: #FFFFFF;
+            border: 1px solid var(--border-color);
+            font-weight: 600;
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .tab-btn.active, .tab-btn:hover {
+            background: var(--primary-blue);
+            color: #FFFFFF;
+            border-color: var(--primary-blue);
+            box-shadow: 0 4px 12px rgba(30, 58, 138, 0.25);
+        }
+
+        .grade-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .grade-card {
+            background: var(--bg-card);
+            border-radius: var(--radius-md);
+            padding: 25px;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .grade-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: var(--accent-gold);
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .grade-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .grade-card:hover::before {
+            opacity: 1;
+        }
+
+        .grade-icon {
+            width: 50px;
+            height: 50px;
+            background: rgba(30, 58, 138, 0.08);
+            color: var(--primary-blue);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            margin-bottom: 18px;
+        }
+
+        .grade-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .grade-sub {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 15px;
+        }
+
+        .grade-subjects-count {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            color: var(--primary-blue);
+            font-weight: 600;
+            border-top: 1px solid var(--border-color);
+            padding-top: 15px;
+        }
+
+        /* RESOURCE CARDS & LIBRARY */
+        .resources-section {
+            padding: 60px 0;
+            background: #F1F5F9;
+        }
+
+        .resource-tabs {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+
+        .res-tab {
+            background: none;
+            border: none;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            cursor: pointer;
+            padding: 8px 16px;
+            position: relative;
+            transition: var(--transition);
+        }
+
+        .res-tab.active {
+            color: var(--primary-blue);
+        }
+
+        .res-tab.active::after {
+            content: '';
+            position: absolute;
+            bottom: -12px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: var(--accent-gold);
+            border-radius: 3px;
+        }
+
+        .resource-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 25px;
+        }
+
+        .resource-card {
+            background: #FFFFFF;
+            border-radius: var(--radius-md);
+            padding: 22px;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .resource-card:hover {
+            box-shadow: var(--shadow-md);
+            transform: translateY(-4px);
+        }
+
+        .card-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+
+        .badge {
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .badge-paper { background: #E0F2FE; color: #0369A1; }
+        .badge-book { background: #FEF3C7; color: #B45309; }
+        .badge-note { background: #DCFCE7; color: #15803D; }
+
+        .resource-year {
+            font-size: 0.8rem;
+            background: #F1F5F9;
+            padding: 2px 8px;
+            border-radius: 4px;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+
+        .resource-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 10px;
+            line-height: 1.35;
+        }
+
+        .resource-info {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+        }
+
+        .resource-info span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .card-actions {
+            display: flex;
+            gap: 10px;
+            border-top: 1px solid var(--border-color);
+            padding-top: 15px;
+        }
+
+        .btn-sm {
+            padding: 8px 14px;
+            font-size: 0.85rem;
+            flex: 1;
+        }
+
+        /* INSTRUCTION / ACCORDION SECTION */
+        .guide-section {
+            padding: 80px 0;
+            background: #FFFFFF;
+        }
+
+        .guide-box {
+            background: var(--bg-dark-blue);
+            color: white;
+            border-radius: var(--radius-lg);
+            padding: 40px;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .guide-box h2 {
+            font-size: 1.8rem;
+            color: var(--accent-gold);
+            margin-bottom: 15px;
+        }
+
+        .accordion {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .acc-item {
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+        }
+
+        .acc-header {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 16px 20px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .acc-content {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            background: rgba(0, 0, 0, 0.2);
+            font-size: 0.95rem;
+            color: #CBD5E1;
+            line-height: 1.6;
+        }
+
+        .acc-item.active .acc-content {
+            padding: 20px;
+            max-height: 400px;
+        }
+
+        .acc-item.active .acc-header {
+            background: rgba(245, 158, 11, 0.15);
+            color: var(--accent-gold);
+        }
+
+        /* ABOUT & CONTACT SECTION */
+        .about-contact {
+            padding: 80px 0;
+            background: var(--bg-light);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .contact-card, .about-info-card {
+            background: #FFFFFF;
+            border-radius: var(--radius-md);
+            padding: 35px;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--border-color);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--text-dark);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-sm);
+            font-size: 0.95rem;
+            outline: none;
+        }
+
+        .form-control:focus {
+            border-color: var(--primary-blue);
+        }
+
+        textarea.form-control {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        /* MODAL POPUP */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(10, 25, 47, 0.8);
+            backdrop-filter: blur(5px);
+            z-index: 2000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            padding: 20px;
+        }
+
+        .modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .modal-content {
+            background: #FFFFFF;
+            border-radius: var(--radius-lg);
+            max-width: 700px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+            padding: 30px;
+            box-shadow: var(--shadow-lg);
+            transform: scale(0.9);
+            transition: var(--transition);
+        }
+
+        .modal-overlay.active .modal-content {
+            transform: scale(1);
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #F1F5F9;
+            border: none;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .pdf-viewer-placeholder {
+            width: 100%;
+            height: 350px;
+            background: #F8FAFC;
+            border: 2px dashed #CBD5E1;
+            border-radius: var(--radius-sm);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+            color: var(--text-muted);
+        }
+
+        /* FOOTER */
+        footer {
+            background: var(--bg-dark-blue);
+            color: white;
+            padding: 60px 0 25px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-brand p {
+            color: #94A3B8;
+            margin-top: 15px;
+            font-size: 0.9rem;
+            max-width: 320px;
+        }
+
+        .footer-col h4 {
+            color: var(--accent-gold);
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            color: #CBD5E1;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--accent-gold);
+        }
+
+        .copyright {
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 25px;
+            color: #64748B;
+            font-size: 0.85rem;
+        }
+
+        /* NOTIFICATION TOAST */
+        .toast {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--bg-dark-blue);
+            color: white;
+            border-left: 4px solid var(--accent-gold);
+            padding: 15px 25px;
+            border-radius: var(--radius-sm);
+            box-shadow: var(--shadow-lg);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            z-index: 3000;
+            transform: translateY(100px);
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .toast.show {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 1024px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-subtitle-sinhala {
+                justify-content: center;
+            }
+
+            .hero-desc {
+                margin: 0 auto 30px;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .stats-strip {
+                justify-content: center;
+            }
+
+            .filter-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 75px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 75px);
+                background: var(--bg-dark-blue);
+                flex-direction: column;
+                padding: 40px 20px;
+                transition: var(--transition);
+            }
+
+            .nav-links.active {
+                left: 0;
+            }
+
+            .mobile-toggle {
+                display: block;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .filter-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-content h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="brand-logo">
+                    <div class="logo-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <div class="logo-text">EDUCATION<span>.LK</span></div>
+                </a>
+
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home" class="active"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a href="#resources"><i class="fa-solid fa-file-pdf"></i> Past Papers</a></li>
+                    <li><a href="#resources"><i class="fa-solid fa-book"></i> Textbooks</a></li>
+                    <li><a href="#resources"><i class="fa-solid fa-note-sticky"></i> Study Notes</a></li>
+                    <li><a href="#grades"><i class="fa-solid fa-layer-group"></i> Grade-wise</a></li>
+                    <li><a href="#guide"><i class="fa-solid fa-code"></i> Setup Guide</a></li>
+                    <li><a href="#about"><i class="fa-solid fa-circle-info"></i> About</a></li>
+                </ul>
+
+                <div class="header-actions">
+                    <button class="btn btn-gold btn-sm" onclick="openUploadModal()">
+                        <i class="fa-solid fa-upload"></i> Upload Resource
+                    </button>
+                    <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-subtitle-sinhala">
+                        <i class="fa-solid fa-bookmark"></i> ඔබේ අධ්‍යාපනික ගමන මෙතැනින් ඇරඹේ
+                    </div>
+                    <h1>Your Learning Journey Starts Here</h1>
+                    <p class="hero-desc">
+                        Access free Sri Lankan G.C.E. O/L, A/L, and Grade 1-13 syllabus past papers, official government textbooks, marking schemes, and revision notes in Sinhala, English, and Tamil mediums.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#resources" onclick="setFilter('Past Paper')" class="btn btn-gold">
+                            <i class="fa-solid fa-file-arrow-down"></i> Browse Past Papers
+                        </a>
+                        <a href="#resources" onclick="setFilter('Textbook')" class="btn btn-outline">
+                            <i class="fa-solid fa-book-open"></i> Explore Books
+                        </a>
+                    </div>
+                    <div class="stats-strip">
+                        <div class="stat-item">
+                            <h3>50,000+</h3>
+                            <p>Active Students</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>1,200+</h3>
+                            <p>Free Past Papers</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>Grade 1-13</h3>
+                            <p>Full Syllabus</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-illustration">
+                    <div class="illustration-card">
+                        <span class="card-header-badge"><i class="fa-solid fa-bolt"></i> Quick Search Resources</span>
+                        <div class="hero-search-box">
+                            <i class="fa-solid fa-magnifying-glass" style="color: var(--text-muted); margin-left: 10px;"></i>
+                            <input type="text" id="heroSearchInput" placeholder="Type Subject or Year (e.g. O/L Maths 2022)...">
+                            <button class="btn btn-gold" onclick="triggerHeroSearch()">Search</button>
+                        </div>
+                        <p style="font-size: 0.85rem; color: #94A3B8; margin-bottom: 12px;">Popular Searches:</p>
+                        <div class="quick-tags">
+                            <span class="tag" onclick="quickSearch('A/L Physics')">A/L Physics</span>
+                            <span class="tag" onclick="quickSearch('O/L Mathematics')">O/L Mathematics</span>
+                            <span class="tag" onclick="quickSearch('Grade 5 Scholarship')">Grade 5 Scholarship</span>
+                            <span class="tag" onclick="quickSearch('ICT Note')">ICT Notes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEARCH & FILTER BAR -->
+    <div class="container">
+        <div class="search-filter-section">
+            <div class="filter-grid">
+                <div class="filter-group">
+                    <label><i class="fa-solid fa-search"></i> Keyword Search</label>
+                    <input type="text" id="filterKeyword" class="filter-control" placeholder="Search by paper title or subject...">
+                </div>
+                <div class="filter-group">
+                    <label><i class="fa-solid fa-filter"></i> Category</label>
+                    <select id="filterType" class="filter-control">
+                        <option value="All">All Resources</option>
+                        <option value="Past Paper">Past Papers</option>
+                        <option value="Textbook">Textbooks</option>
+                        <option value="Study Note">Study Notes</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label><i class="fa-solid fa-graduation-cap"></i> Grade Level</label>
+                    <select id="filterGrade" class="filter-control">
+                        <option value="All">All Grades</option>
+                        <option value="Grade 5">Grade 5 (Scholarship)</option>
+                        <option value="Grade 10">Grade 10</option>
+                        <option value="Grade 11 (O/L)">Grade 11 (O/L)</option>
+                        <option value="Grade 12">Grade 12 (A/L)</option>
+                        <option value="Grade 13 (A/L)">Grade 13 (A/L)</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label><i class="fa-solid fa-calendar"></i> Examination Year</label>
+                    <select id="filterYear" class="filter-control">
+                        <option value="All">All Years</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                    </select>
+                </div>
+                <div class="filter-group" style="justify-content: flex-end;">
+                    <label>&nbsp;</label>
+                    <button class="btn btn-blue" onclick="resetFilters()"><i class="fa-solid fa-rotate"></i> Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- GRADE-WISE EXPLORER -->
+    <section class="grade-section" id="grades">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Structured Learning</span>
+                <h2 class="section-title">Grade-Wise Resource <span>Explorer</span></h2>
+                <p class="section-desc">Select your academic grade level to quickly filter textbooks, past term papers, and revision packages tailored for your syllabus.</p>
+            </div>
+
+            <div class="grade-tabs">
+                <button class="tab-btn active" onclick="filterGradeTab('all')">All Levels</button>
+                <button class="tab-btn" onclick="filterGradeTab('primary')">Primary (Grades 1-5)</button>
+                <button class="tab-btn" onclick="filterGradeTab('junior')">Junior Secondary (Grades 6-9)</button>
+                <button class="tab-btn" onclick="filterGradeTab('ol')">O/L Section (Grades 10-11)</button>
+                <button class="tab-btn" onclick="filterGradeTab('al')">A/L Streams (Grades 12-13)</button>
+            </div>
+
+            <div class="grade-grid" id="gradeCardGrid">
+                <!-- Dynamic Grade Cards Rendered via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- RESOURCE LIBRARY SECTION -->
+    <section class="resources-section" id="resources">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Digital Repository</span>
+                <h2 class="section-title">Explore Free <span>Educational Resources</span></h2>
+                <p class="section-desc">High-quality, teacher-verified study materials prepared for Sri Lankan government and national curriculum exams.</p>
+            </div>
+
+            <div class="resource-tabs">
+                <button class="res-tab active" onclick="switchResourceCategory('All', this)">All Materials</button>
+                <button class="res-tab" onclick="switchResourceCategory('Past Paper', this)">Past Papers</button>
+                <button class="res-tab" onclick="switchResourceCategory('Textbook', this)">Textbooks</button>
+                <button class="res-tab" onclick="switchResourceCategory('Study Note', this)">Short Notes</button>
+            </div>
+
+            <div class="resource-grid" id="resourceContainer">
+                <!-- Dynamic Resource Cards Rendered via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- SETUP & PUBLISHING GUIDE -->
+    <section class="guide-section" id="guide">
+        <div class="container">
+            <div class="guide-box">
+                <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 15px;">
+                    <div>
+                        <h2><i class="fa-solid fa-code"></i> Local Setup & Publishing Guide</h2>
+                        <p style="color: #94A3B8;">Instructions for developers and teachers to run locally or deploy EDUCATION online for free.</p>
+                    </div>
+                    <span class="badge badge-paper" style="background: var(--accent-gold); color: var(--bg-dark-blue); font-size: 0.9rem;">Developer Docs</span>
+                </div>
+
+                <div class="accordion">
+                    <div class="acc-item active">
+                        <div class="acc-header" onclick="toggleAccordion(this)">
+                            <span>1. How to run this website locally on your computer?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="acc-content">
+                            1. Save this complete file as <code>index.html</code> on your desktop.<br>
+                            2. Double-click the <code>index.html</code> file to open it in Google Chrome, Microsoft Edge, or Firefox.<br>
+                            3. No external web server, Node.js, or database installation is required! All search, filter, and preview functions work directly in modern web browsers.
+                        </div>
+                    </div>
+
+                    <div class="acc-item">
+                        <div class="acc-header" onclick="toggleAccordion(this)">
+                            <span>2. How to publish this website online for FREE using GitHub Pages?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="acc-content">
+                            1. Create a free account at <a href="https://github.com" target="_blank" style="color:var(--accent-gold);">GitHub.com</a>.<br>
+                            2. Create a new public repository named <code>education-srilanka</code>.<br>
+                            3. Upload this <code>index.html</code> file into your repository repository root.<br>
+                            4. Go to <strong>Settings</strong> &gt; <strong>Pages</strong> &gt; Select <code>main</code> branch as the Source &gt; Click <strong>Save</strong>.<br>
+                            5. Your website will be live in minutes at <code>https://yourusername.github.io/education-srilanka/</code>!
+                        </div>
+                    </div>
+
+                    <div class="acc-item">
+                        <div class="acc-header" onclick="toggleAccordion(this)">
+                            <span>3. How to add custom real PDF files to this website?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="acc-content">
+                            You can host your PDF documents on Google Drive or GitHub Releases and replace the sample URL in the <code>resourcesData</code> array in JavaScript:<br>
+                            <code>downloadUrl: "https://your-domain.com/files/maths-2023.pdf"</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT & CONTACT SECTION -->
+    <section class="about-contact" id="about">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="about-info-card">
+                    <span class="section-subtitle">Empowering Education</span>
+                    <h2 class="section-title" style="font-size: 1.8rem;">About <span>EDUCATION.LK</span></h2>
+                    <p style="color: var(--text-muted); margin-bottom: 20px;">
+                        EDUCATION.LK is a non-profit driven educational initiative aimed at providing equal learning opportunities for every student in Sri Lanka. From rural primary schools to urban A/L science streams, we centralize high-quality learning resources in one seamless digital ecosystem.
+                    </p>
+
+                    <div style="display: flex; flex-direction: column; gap: 15px; margin-top: 25px;">
+                        <div style="display: flex; gap: 15px; align-items: center;">
+                            <div style="width: 40px; height: 40px; background: rgba(245,158,11,0.15); color: var(--accent-gold-hover); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 0.95rem;">100% Free Access</h4>
+                                <p style="font-size: 0.85rem; color: var(--text-muted);">No subscription fees or paywalls for student downloads.</p>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; gap: 15px; align-items: center;">
+                            <div style="width: 40px; height: 40px; background: rgba(30,58,138,0.15); color: var(--primary-blue); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 0.95rem;">National Curriculum Aligned</h4>
+                                <p style="font-size: 0.85rem; color: var(--text-muted);">Prepared according to Sri Lankan NIE syllabus guidelines.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <h3 style="font-size: 1.4rem; margin-bottom: 8px;">Send Us a Message</h3>
+                    <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 20px;">Have questions, syllabus requests, or want to contribute study notes?</p>
+
+                    <form id="contactForm" onsubmit="handleContactSubmit(event)">
+                        <div class="form-group">
+                            <label>Your Name</label>
+                            <input type="text" class="form-control" required placeholder="e.g. Kasun Perera">
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" class="form-control" required placeholder="kasun@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label>Message / Resource Request</label>
+                            <textarea class="form-control" required placeholder="Tell us how we can help or request a paper..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-gold" style="width: 100%;">
+                            <i class="fa-solid fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="brand-logo">
+                        <div class="logo-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="logo-text">EDUCATION<span>.LK</span></div>
+                    </a>
+                    <p>Building a brighter future for Sri Lankan students through open access to quality learning resources.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#resources">O/L Past Papers</a></li>
+                        <li><a href="#resources">A/L Past Papers</a></li>
+                        <li><a href="#resources">School Textbooks</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Grades</h4>
+                    <ul>
+                        <li><a href="#grades">Grade 5 Scholarship</a></li>
+                        <li><a href="#grades">Grade 6 - 9 Secondary</a></li>
+                        <li><a href="#grades">Grade 10 - 11 O/L</a></li>
+                        <li><a href="#grades">Grade 12 - 13 A/L</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><i class="fa-solid fa-envelope"></i> support@education.lk</li>
+                        <li><i class="fa-solid fa-phone"></i> +94 11 234 5678</li>
+                        <li><i class="fa-solid fa-location-dot"></i> Colombo, Sri Lanka</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                &copy; 2026 EDUCATION.LK — Educational Open Platform for Sri Lanka. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE RESOURCE PREVIEW MODAL -->
+    <div class="modal-overlay" id="previewModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('previewModal')"><i class="fa-solid fa-xmark"></i></button>
+            <span class="badge badge-paper" id="modalBadge">Past Paper</span>
+            <h2 id="modalTitle" style="margin-top: 10px; color: var(--text-dark);">Resource Title</h2>
+            <p id="modalMeta" style="color: var(--text-muted); font-size: 0.9rem; margin-top: 4px;">Grade 11 • Mathematics • 2022</p>
+
+            <div class="pdf-viewer-placeholder">
+                <i class="fa-solid fa-file-pdf" style="font-size: 3.5rem; color: var(--accent-gold); margin-bottom: 12px;"></i>
+                <p style="font-weight: 600;">Document Preview Ready</p>
+                <p style="font-size: 0.85rem; text-align: center; max-width: 80%;">Sample educational document prepared for online viewing & offline learning.</p>
+            </div>
+
+            <div style="display: flex; gap: 12px;">
+                <a id="modalDownloadBtn" href="#" target="_blank" class="btn btn-gold" style="flex: 1;" download>
+                    <i class="fa-solid fa-download"></i> Download PDF File
+                </a>
+                <button class="btn btn-outline" onclick="closeModal('previewModal')">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- UPLOAD / REQUEST MODAL -->
+    <div class="modal-overlay" id="uploadModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('uploadModal')"><i class="fa-solid fa-xmark"></i></button>
+            <h2 style="color: var(--text-dark); margin-bottom: 5px;"><i class="fa-solid fa-cloud-arrow-up"></i> Contribute or Request Resource</h2>
+            <p style="color: var(--text-muted); font-size: 0.88rem; margin-bottom: 20px;">Share study materials or ask for missing past papers.</p>
+
+            <form onsubmit="handleUploadSubmit(event)">
+                <div class="form-group">
+                    <label>Resource Title</label>
+                    <input type="text" class="form-control" placeholder="e.g. 2023 Grade 11 Science Term 3 Paper" required>
+                </div>
+                <div class="form-group">
+                    <label>Target Grade & Subject</label>
+                    <input type="text" class="form-control" placeholder="e.g. Grade 11 Science" required>
+                </div>
+                <div class="form-group">
+                    <label>Upload File / Drive Link</label>
+                    <input type="text" class="form-control" placeholder="Paste Google Drive / Direct URL link" required>
+                </div>
+                <button type="submit" class="btn btn-blue" style="width: 100%;">Submit Resource</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- NOTIFICATION TOAST -->
+    <div class="toast" id="toast">
+        <i class="fa-solid fa-circle-check" style="color: var(--accent-gold); font-size: 1.2rem;"></i>
+        <span id="toastMsg">Action completed successfully!</span>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        /* MOCK SAMPLE DATA (Structured for Sri Lankan Syllabus) */
+        const resourcesData = [
+            {
+                id: 1,
+                title: "G.C.E. O/L Mathematics Past Paper (Paper I & II)",
+                type: "Past Paper",
+                grade: "Grade 11 (O/L)",
+                subject: "Mathematics",
+                year: "2022",
+                medium: "Sinhala",
+                downloads: "14.2k",
+                fileUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+            },
+            {
+                id: 2,
+                title: "G.C.E. A/L Physics Combined Past Examination Paper",
+                type: "Past Paper",
+                grade: "Grade 13 (A/L)",
+                subject: "Physics",
+                year: "2023",
+                medium: "English",
+                downloads: "9.8k",
+                fileUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+            },
+            {
+                id: 3,
+                title: "Grade 5 Scholarship Model Examination Paper",
+                type: "Past Paper",
+                grade: "Grade 5",
+                subject: "Scholarship",
+                year: "2023",
+                medium: "Sinhala",
+                downloads: "21.5k",
+                fileUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+            },
+            {
+                id: 4,
+                title: "Grade 10 Science Official Government Textbook",
+                type: "Textbook",
+                grade: "Grade 10",
+                subject: "Science",
+                year: "2021",
+                medium: "Sinhala",
+                downloads: "8.1k",
+                fileUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+            },
+            {
+                id: 5,
+                title: "G.C.E. O/L ICT Revision Short Notes & Mind Maps",
+                type: "Study Note",
+                grade: "Grade 11 (O/L)",
+                subject: "ICT",
+                year: "2023",
+                medium: "English",
+                downloads: "11.3k",
+                fileUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+            },
+            {
+                id: 6,
+                title: "G.C.E. A/L Biology Complete Syllabus Summary",
+                type: "Study Note",
+                grade: "Grade 12",
+                subject: "Biology",
+                year: "2022",
+                medium: "Sinhala",
+                downloads: "6.4k",
+                fileUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+            }
+        ];
+
+        const gradeCategories = [
+            {
+                title: "Primary Level",
+                range: "Grades 1 - 5",
+                sub: "Scholarship exam prep, basic reading & arithmetic",
+                type: "primary",
+                count: "120+ Papers",
+                icon: "fa-child"
+            },
+            {
+                title: "Junior Secondary",
+                range: "Grades 6 - 9",
+                sub: "Science, Sinhala, English, History & Mathematics",
+                type: "junior",
+                count: "250+ Resources",
+                icon: "fa-book-open"
+            },
+            {
+                title: "O/L Examination",
+                range: "Grades 10 - 11",
+                sub: "Official Past Papers, Marking Schemes & Model Papers",
+                type: "ol",
+                count: "450+ Papers",
+                icon: "fa-award"
+            },
+            {
+                title: "A/L Advanced Level",
+                range: "Grades 12 - 13",
+                sub: "Bio, Science, Maths, Commerce, Arts & Tech Streams",
+                type: "al",
+                count: "500+ Resources",
+                icon: "fa-user-graduate"
+            }
+        ];
+
+        /* DOM LOAD EVENT */
+        document.addEventListener('DOMContentLoaded', () => {
+            renderGradeCards('all');
+            renderResources(resourcesData);
+            setupFilterListeners();
+            setupMobileMenu();
+        });
+
+        /* MOBILE MENU TOGGLE */
+        function setupMobileMenu() {
+            const toggleBtn = document.getElementById('mobileToggle');
+            const navLinks = document.getElementById('navLinks');
+            toggleBtn.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        }
+
+        /* RENDER GRADE CARDS */
+        function renderGradeCards(filterType) {
+            const container = document.getElementById('gradeCardGrid');
+            container.innerHTML = '';
+
+            const filtered = filterType === 'all' 
+                ? gradeCategories 
+                : gradeCategories.filter(item => item.type === filterType);
+
+            filtered.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'grade-card';
+                card.innerHTML = `
+                    <div class="grade-icon"><i class="fa-solid ${item.icon}"></i></div>
+                    <div class="grade-title">${item.title}</div>
+                    <div style="color: var(--accent-gold-hover); font-weight:700; font-size:0.85rem; margin-bottom:6px;">${item.range}</div>
+                    <div class="grade-sub">${item.sub}</div>
+                    <div class="grade-subjects-count">
+                        <span>${item.count}</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        function filterGradeTab(type) {
+            document.querySelectorAll('.grade-tabs .tab-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            renderGradeCards(type);
+        }
+
+        /* RENDER RESOURCE CARDS */
+        function renderResources(items) {
+            const container = document.getElementById('resourceContainer');
+            container.innerHTML = '';
+
+            if (items.length === 0) {
+                container.innerHTML = `
+                    <div style="grid-column: 1 / -1; text-align: center; padding: 50px 20px; background: white; border-radius: 12px;">
+                        <i class="fa-solid fa-folder-open" style="font-size: 3rem; color: #CBD5E1; margin-bottom: 15px;"></i>
+                        <h3 style="color: var(--text-dark);">No matching resources found</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 5px;">Try adjusting your search keywords or clearing filters.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            items.forEach(res => {
+                let badgeClass = 'badge-paper';
+                if (res.type === 'Textbook') badgeClass = 'badge-book';
+                if (res.type === 'Study Note') badgeClass = 'badge-note';
+
+                const card = document.createElement('div');
+                card.className = 'resource-card';
+                card.innerHTML = `
+                    <div>
+                        <div class="card-top">
+                            <span class="badge ${badgeClass}">${res.type}</span>
+                            <span class="resource-year">${res.year}</span>
+                        </div>
+                        <h3 class="resource-title">${res.title}</h3>
+                        <div class="resource-info">
+                            <span><i class="fa-solid fa-graduation-cap"></i> ${res.grade}</span>
+                            <span><i class="fa-solid fa-book"></i> ${res.subject}</span>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn btn-outline btn-sm" onclick="openPreviewModal(${res.id})">
+                            <i class="fa-solid fa-eye"></i> Preview
+                        </button>
+                        <a href="${res.fileUrl}" target="_blank" class="btn btn-gold btn-sm" download>
+                            <i class="fa-solid fa-download"></i> Download
+                        </a>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        /* FILTER SYSTEM */
+        function setupFilterListeners() {
+            const keywordInput = document.getElementById('filterKeyword');
+            const typeSelect = document.getElementById('filterType');
+            const gradeSelect = document.getElementById('filterGrade');
+            const yearSelect = document.getElementById('filterYear');
+
+            const applyFilters = () => {
+                const keyword = keywordInput.value.toLowerCase();
+                const type = typeSelect.value;
+                const grade = gradeSelect.value;
+                const year = yearSelect.value;
+
+                const filtered = resourcesData.filter(res => {
+                    const matchesKeyword = res.title.toLowerCase().includes(keyword) || res.subject.toLowerCase().includes(keyword);
+                    const matchesType = type === 'All' || res.type === type;
+                    const matchesGrade = grade === 'All' || res.grade === grade;
+                    const matchesYear = year === 'All' || res.year === year;
+
+                    return matchesKeyword && matchesType && matchesGrade && matchesYear;
+                });
+
+                renderResources(filtered);
+            };
+
+            keywordInput.addEventListener('input', applyFilters);
+            typeSelect.addEventListener('change', applyFilters);
+            gradeSelect.addEventListener('change', applyFilters);
+            yearSelect.addEventListener('change', applyFilters);
+        }
+
+        function resetFilters() {
+            document.getElementById('filterKeyword').value = '';
+            document.getElementById('filterType').value = 'All';
+            document.getElementById('filterGrade').value = 'All';
+            document.getElementById('filterYear').value = 'All';
+            renderResources(resourcesData);
+        }
+
+        function setFilter(type) {
+            document.getElementById('filterType').value = type;
+            const event = new Event('change');
+            document.getElementById('filterType').dispatchEvent(event);
+        }
+
+        function quickSearch(tag) {
+            document.getElementById('filterKeyword').value = tag;
+            const event = new Event('input');
+            document.getElementById('filterKeyword').dispatchEvent(event);
+            document.getElementById('resources').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function triggerHeroSearch() {
+            const val = document.getElementById('heroSearchInput').value;
+            quickSearch(val);
+        }
+
+        function switchResourceCategory(type, element) {
+            document.querySelectorAll('.resource-tabs .res-tab').forEach(tab => tab.classList.remove('active'));
+            element.classList.add('active');
+            setFilter(type);
+        }
+
+        /* MODAL HANDLERS */
+        function openPreviewModal(id) {
+            const item = resourcesData.find(r => r.id === id);
+            if (!item) return;
+
+            document.getElementById('modalTitle').textContent = item.title;
+            document.getElementById('modalMeta').textContent = `${item.grade} • ${item.subject} • Medium: ${item.medium}`;
+            document.getElementById('modalBadge').textContent = item.type;
+            document.getElementById('modalDownloadBtn').href = item.fileUrl;
+
+            document.getElementById('previewModal').classList.add('active');
+        }
+
+        function openUploadModal() {
+            document.getElementById('uploadModal').classList.add('active');
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).classList.remove('active');
+        }
+
+        /* ACCORDION */
+        function toggleAccordion(header) {
+            const item = header.parentElement;
+            item.classList.toggle('active');
+        }
+
+        /* TOAST NOTIFICATION */
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            document.getElementById('toastMsg').textContent = message;
+            toast.classList.add('show');
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 3500);
+        }
+
+        /* FORM SUBMISSIONS */
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            showToast("Thank you! Your message has been sent successfully.");
+            e.target.reset();
+        }
+
+        function handleUploadSubmit(e) {
+            e.preventDefault();
+            closeModal('uploadModal');
+            showToast("Resource submitted for teacher verification!");
+            e.target.reset();
+        }
+    </script>
+</body>
+</html>
